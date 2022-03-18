@@ -1,0 +1,128 @@
+body {
+    background: honeydew;
+}
+
+
+.box1 {
+    width: 1000px;
+    height: 50px;
+    border: 1px solid gray;
+    margin: 50px auto;
+}
+
+
+.btn1 {
+    width: 50px;
+    height: 50px;
+    background-color: fuchsia;
+    animation: anim-one 5s 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes anim-one {
+    0% {
+        width: 50px
+    }
+    100% {
+        width: 900px
+    }
+}
+
+
+.box2 {
+    position: relative;
+    height: 40px;
+    margin-bottom: 50px;
+}
+
+
+.box2:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 70px;
+    height: 100%;
+    background: mediumturquoise;
+    border-radius: 3px;
+    animation: anim-two 5s infinite alternate;
+    cursor: pointer;
+    animation-play-state: paused;
+}
+
+
+.box2:hover:before {
+    animation-play-state: initial;
+}
+
+
+@keyframes anim-two {
+    100% {
+        width: 100%;
+    }
+}
+
+
+.box3 {
+    width: 350px;
+    height: 300px;
+    border: 1px solid grey;
+    margin: 0 auto;
+}
+
+
+.ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: yellow;
+    border: yellow;
+    animation: anim-three;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes anim-three {
+    0% {
+        transform: translate(0, 0)
+    }
+    10% {
+        transform: translate(40px, 275px);
+    }
+    20% {
+        transform: translate(100px, 100px) rotate(360deg);
+        background-color: orange
+    }
+    30% {
+        transform: translate(150px, 275px);
+        background-color: tomato
+    }
+    40% {
+        transform: translate(190px, 180px) rotate(360deg)
+    }
+    50% {
+        transform: translate(210px, 275px)
+    }
+    60% {
+        transform: translate(240px, 210px) rotate(360deg);
+        background-color: tomato
+    }
+    70% {
+        transform: translate(260px, 275px)
+    }
+    80% {
+        transform: translate(270px, 265px) rotate(360deg);
+        background-color: tomato
+    }
+    90% {
+        transform: translate(280px, 275px) rotate(360deg);
+        background-color: tomato
+    }
+    100% {
+        transform: translate(330px, 275px)
+    }
+}
+
+
