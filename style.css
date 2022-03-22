@@ -1,7 +1,14 @@
 body {
+    display: flex;
     background: honeydew;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
 }
-
+* {
+    box-sizing: border-box;
+}
 
 .box1 {
     width: 1000px;
@@ -86,43 +93,54 @@ body {
 
 @keyframes anim-three {
     0% {
-        transform: translate(0, 0)
+        transform: translate(0, 0);
+animation-timing-function: ease-in;
+
     }
     10% {
         transform: translate(40px, 275px);
+  animation-timing-function: ease-out;
     }
     20% {
         transform: translate(100px, 100px) rotate(360deg);
-        background-color: orange
+        background-color: orange;
+ animation-timing-function: ease-in;
     }
     30% {
         transform: translate(150px, 275px);
-        background-color: tomato
+  animation-timing-function: ease-out;
+        background-color: tomato;
     }
     40% {
-        transform: translate(190px, 180px) rotate(360deg)
+        transform: translate(190px, 180px) rotate(360deg);
+ animation-timing-function: ease-in;
     }
     50% {
-        transform: translate(210px, 275px)
+        transform: translate(210px, 275px);
+  animation-timing-function: ease-out;
     }
     60% {
         transform: translate(240px, 210px) rotate(360deg);
-        background-color: tomato
+        background-color: tomato;
+ animation-timing-function: ease-in;
     }
     70% {
-        transform: translate(260px, 275px)
+        transform: translate(260px, 275px);
+  animation-timing-function: ease-out;
     }
     80% {
         transform: translate(270px, 265px) rotate(360deg);
-        background-color: tomato
+        background-color: tomato;
+ animation-timing-function: ease-in;
     }
     90% {
         transform: translate(280px, 275px) rotate(360deg);
-        background-color: tomato
+        background-color: tomato;
+  animation-timing-function: ease-out;
     }
     100% {
-        transform: translate(330px, 275px)
+        transform: translate(330px, 275px);
+ animation-timing-function: ease-in;
     }
 }
-
 
